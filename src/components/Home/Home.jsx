@@ -77,7 +77,7 @@ const Home = () => {
 
       {/* not match */}
       {filteredPokemons.length === 0 && !loading && !error && (
-        <p className="text-center text-gray-500 text-lg mt-10">No Pokemon match your search!</p>
+        <p className="text-center text-gray-500 text-lg mt-10">No Pokemon match your search</p>
       )}
 
       {/* Card component*/}
