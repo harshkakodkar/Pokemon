@@ -13,7 +13,7 @@ const Search = ({ searchTerm, setSearchTerm, setSelectedType }) => {
     <div className="flex gap-4 flex-col md:flex-row justify-center mb-8">
       <input
         type="text"
-        placeholder="Search Pokémon"
+        placeholder="Search Pokemon"
         value={searchTerm}
         onChange={handleSearchChange}
         className="p-2 border border-gray-300 rounded-md w-full md:w-1/3"
