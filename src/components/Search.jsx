@@ -1,45 +1,24 @@
 import React from 'react';
 
-const Search = ({ searchTerm, setSearchTerm, setSelectedType }) => {
-  const handleSearchChange = (e) => {
-    setSearchTerm(e.target.value);
-  };
-
-  const handleSelectTypeChange = (e) => {
-    setSelectedType(e.target.value);
-  };
-
+const Search = ({ searchTerm, setSearchTerm, onClearFilters }) => {
   return (
-    <div className="flex gap-4 flex-col md:flex-row justify-center mb-8">
+    <div className="flex flex-col md:flex-row gap-4 justify-center mb-8">
+      {/* Search Input */}
       <input
         type="text"
-        placeholder="Search Pokemon"
+        placeholder="Search Pokémon"
         value={searchTerm}
-        onChange={handleSearchChange}
-        className="p-2 border border-gray-300 rounded-md w-full md:w-1/3"
+        onChange={(e) => setSearchTerm(e.target.value)}
+        className="p-2 border border-gray-300 rounded-md w-full md:w-2/3"
       />
-      <select
-        onChange={handleSelectTypeChange}
-        className="p-2 border border-gray-300 rounded-md w-full md:w-1/3"
+
+      {/* Clear Filters Button */}
+      <button
+        onClick={onClearFilters}
+        className="px-6 py-2 bg-red-500 text-white font-semibold rounded-md hover:bg-red-700 transition"
       >
-        <option value="">All Types</option>
-        <option value="fire">Fire</option>
-        <option value="water">Water</option>
-        <option value="grass">Grass</option>
-        <option value="electric">Electric</option>
-        <option value="poison">Poison</option>
-        <option value="flying">Flying</option>
-        <option value="bug">Bug</option>
-        <option value="fairy">Fairy</option>
-        <option value="dragon">Dragon</option>
-        <option value="psychic">Psychic</option>
-        <option value="rock">Rock</option>
-        <option value="ghost">Ghost</option>
-        <option value="steel">Steel</option>
-        <option value="fighting">Fighting</option>
-
-
-      </select>
+        Clear Filters
+      </button>
     </div>
   );
 };
