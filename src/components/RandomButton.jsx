@@ -18,10 +18,10 @@ const RandomButton = ({ originalPokemons, setDisplayedPokemons, setCurrentPage }
   };
 
   return (
-    <div className="text-center mt-6">
+    <div className="flex justify-center w-full px-4 mt-4 sm:mt-6">
       <button
         onClick={handleRandomClick}
-        className="px-6 py-2 bg-green-500 text-white font-semibold rounded-md hover:bg-green-700 transition"
+        className="px-4 py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-green-500 to-green-600 text-white font-medium sm:font-semibold rounded-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg hover:shadow-green-500/30 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 text-sm sm:text-base"
       >
         Randomize Pokémon
       </button>
