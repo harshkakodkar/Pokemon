@@ -50,6 +50,13 @@ Getting Info from the Internet: I needed to get a lot of info about each Pokemon
 
 Keeping Track of Everything: There was a lot of stuff to keep track of like sorting, filtering, and favorites. I used a system called React Context to make it easier.
 
+
+
 Making it Work on All Devices: I wanted the app to look good on phones, tablets, and computers. It was tricky, but I used something called responsive design to make sure everything fits on any screen.
 
 Fixing Errors: If something goes wrong, I didn’t want the app to break, so I added a special system to catch errors and show nice messages.
+
+
+Screenshot:
+![screencapture-pokemon-lilac-nine-vercel-app-2025-05-02-20_33_12](https://github.com/user-attachments/assets/4180ea63-717b-44ee-8e20-a7b1b446f6d6)
+
